@@ -1,0 +1,12 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "symbols" : [
+    {
+      "filename" : "keyboard_voice-keyboard_voice_symbol.svg",
+      "idiom" : "universal"
+    }
+  ]
+}

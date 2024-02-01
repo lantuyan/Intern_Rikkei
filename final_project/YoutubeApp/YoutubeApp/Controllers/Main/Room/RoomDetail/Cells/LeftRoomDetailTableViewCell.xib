@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="KGk-i7-Jjw" customClass="LeftRoomDetailTableViewCell" customModule="YoutubeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageProfile" translatesAutoresizingMaskIntoConstraints="NO" id="WeO-9k-LDF">
+                        <rect key="frame" x="8" y="8" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="099-bb-0bh"/>
+                            <constraint firstAttribute="height" constant="25" id="XND-Fe-mct"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nqp-6T-EhU">
+                        <rect key="frame" x="41" y="8" width="168.33333333333331" height="76"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="as dasd 1as2d 1a2sd1 a2sd1 a2sd " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSi-lJ-6vf">
+                                <rect key="frame" x="8" y="8" width="152.33333333333334" height="60"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="tintColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wSi-lJ-6vf" secondAttribute="bottom" constant="8" id="0Cp-44-QD7"/>
+                            <constraint firstItem="wSi-lJ-6vf" firstAttribute="leading" secondItem="nqp-6T-EhU" secondAttribute="leading" constant="8" id="615-iQ-J4l"/>
+                            <constraint firstAttribute="trailing" secondItem="wSi-lJ-6vf" secondAttribute="trailing" constant="8" id="MrF-7h-nhJ"/>
+                            <constraint firstItem="wSi-lJ-6vf" firstAttribute="top" secondItem="nqp-6T-EhU" secondAttribute="top" constant="8" id="SZa-r3-9Kw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nqp-6T-EhU" firstAttribute="width" relation="lessThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.7" id="8QR-iB-G6L"/>
+                    <constraint firstItem="WeO-9k-LDF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="98M-sf-9rl"/>
+                    <constraint firstAttribute="bottom" secondItem="nqp-6T-EhU" secondAttribute="bottom" constant="8" id="Fwm-LA-49G"/>
+                    <constraint firstItem="nqp-6T-EhU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="WtB-KO-TZZ"/>
+                    <constraint firstItem="wSi-lJ-6vf" firstAttribute="width" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="eqP-1f-FZK"/>
+                    <constraint firstItem="nqp-6T-EhU" firstAttribute="leading" secondItem="WeO-9k-LDF" secondAttribute="trailing" constant="8" id="onr-NB-rTz"/>
+                    <constraint firstItem="WeO-9k-LDF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="shE-NA-i6h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarImage" destination="WeO-9k-LDF" id="r3q-Oh-PMs"/>
+                <outlet property="messageLabel" destination="wSi-lJ-6vf" id="xKr-VE-1HX"/>
+                <outlet property="uiViewMessage" destination="nqp-6T-EhU" id="gUz-G6-UOu"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="-2.1126760563380285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="imageProfile" width="37" height="37"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

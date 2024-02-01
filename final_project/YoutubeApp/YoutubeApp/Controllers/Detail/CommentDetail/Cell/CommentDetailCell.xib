@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="191" id="KGk-i7-Jjw" customClass="CommentDetailCell" customModule="YoutubeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="187"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="187"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageProfile" translatesAutoresizingMaskIntoConstraints="NO" id="NTT-G6-jFv">
+                        <rect key="frame" x="8" y="8" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Rdt-5S-6pl"/>
+                            <constraint firstAttribute="width" constant="25" id="rsp-FH-Twk"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tf1-dV-hvz">
+                        <rect key="frame" x="41" y="8" width="273" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@mspeach327123 * 2y ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2v-aN-fMq">
+                                <rect key="frame" x="0.0" y="0.0" width="130.33333333333334" height="25"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBe-59-ooD">
+                                <rect key="frame" x="246.33333333333329" y="0.0" width="26.666666666666657" height="25"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="more_vert-more_vert_symbol" symbolScale="default"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="11"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="O2v-aN-fMq" secondAttribute="bottom" id="KO8-a1-mrX"/>
+                            <constraint firstItem="mBe-59-ooD" firstAttribute="top" secondItem="tf1-dV-hvz" secondAttribute="top" id="NPf-Ti-RPe"/>
+                            <constraint firstAttribute="bottom" secondItem="mBe-59-ooD" secondAttribute="bottom" id="Smt-lq-6x5"/>
+                            <constraint firstItem="O2v-aN-fMq" firstAttribute="leading" secondItem="tf1-dV-hvz" secondAttribute="leading" id="bb4-4j-opD"/>
+                            <constraint firstAttribute="trailing" secondItem="mBe-59-ooD" secondAttribute="trailing" id="hA2-Hi-PTZ"/>
+                            <constraint firstAttribute="height" constant="25" id="hY8-wW-y84"/>
+                            <constraint firstItem="O2v-aN-fMq" firstAttribute="top" secondItem="tf1-dV-hvz" secondAttribute="top" id="hcf-ch-SdD"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="331-jR-tRK">
+                        <rect key="frame" x="41" y="33" width="261" height="85"/>
+                        <string key="text">Can you provide the video or reference for how to customize the navigation bar with custom views?
+(Like navigation bar contains menu button, welcome labels and progress bar)
+Thank you.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VCo-Tf-FG6">
+                        <rect key="frame" x="41" y="126" width="126" height="53"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3SS-s5-eIR">
+                                <rect key="frame" x="0.0" y="0.0" width="126" height="15"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yog-WF-GdA">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="15"/>
+                                        <subviews>
+                                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lna-s5-pRw">
+                                                <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="9JR-aA-Q6M"/>
+                                                    <constraint firstAttribute="width" constant="15" id="Yfm-KT-oTe"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <imageReference key="image" image="hand.thumbsup" catalog="system" symbolScale="small"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="11" scale="default"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="ilf-zL-4kj">
+                                                <rect key="frame" x="15" y="0.0" width="21" height="15"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="45P-Il-q9V">
+                                        <rect key="frame" x="51" y="0.0" width="75" height="15"/>
+                                        <subviews>
+                                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHc-iV-3hR">
+                                                <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="">
+                                                    <imageReference key="image" image="hand.thumbsdown" catalog="system" symbolScale="small"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="11" scale="default"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9q-hy-IUy">
+                                                <rect key="frame" x="30" y="0.0" width="15" height="15"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="ellipsis.message" catalog="system" title="">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="11"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cpi-oZ-skH">
+                                                <rect key="frame" x="60" y="0.0" width="15" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="15" id="1nZ-8K-SxR"/>
+                                                    <constraint firstAttribute="height" constant="15" id="IdZ-ty-c2c"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wIH-sL-B9H">
+                                <rect key="frame" x="0.0" y="23" width="126" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="282 replies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9Q-Yh-nOr">
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="30"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" systemColor="linkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="WkB-Y2-TLA"/>
+                                    <constraint firstAttribute="trailing" secondItem="m9Q-Yh-nOr" secondAttribute="trailing" id="Yiw-he-z01"/>
+                                    <constraint firstItem="m9Q-Yh-nOr" firstAttribute="leading" secondItem="wIH-sL-B9H" secondAttribute="leading" id="faA-GO-VQd"/>
+                                    <constraint firstAttribute="bottom" secondItem="m9Q-Yh-nOr" secondAttribute="bottom" id="lFJ-Vy-aPl"/>
+                                    <constraint firstItem="m9Q-Yh-nOr" firstAttribute="top" secondItem="wIH-sL-B9H" secondAttribute="top" id="qrw-DH-myI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZc-zE-1rz">
+                        <rect key="frame" x="228" y="120.33333333333333" width="86" height="28.333333333333329"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Read more">
+                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="12"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="readMoreAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="H3b-zl-wbO"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="331-jR-tRK" firstAttribute="leading" secondItem="tf1-dV-hvz" secondAttribute="leading" id="B6h-oM-xyq"/>
+                    <constraint firstAttribute="trailing" secondItem="AZc-zE-1rz" secondAttribute="trailing" constant="8" id="DpY-ws-40j"/>
+                    <constraint firstItem="AZc-zE-1rz" firstAttribute="top" secondItem="331-jR-tRK" secondAttribute="bottom" constant="2.3300000000000001" id="FTU-Uq-e7l"/>
+                    <constraint firstItem="331-jR-tRK" firstAttribute="top" secondItem="tf1-dV-hvz" secondAttribute="bottom" id="K7L-AO-l7E"/>
+                    <constraint firstItem="NTT-G6-jFv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="MPF-f0-A9Z"/>
+                    <constraint firstAttribute="trailing" secondItem="tf1-dV-hvz" secondAttribute="trailing" constant="8" id="TEm-rp-6BU"/>
+                    <constraint firstItem="tf1-dV-hvz" firstAttribute="leading" secondItem="NTT-G6-jFv" secondAttribute="trailing" constant="8" id="X2a-zw-KvC"/>
+                    <constraint firstItem="331-jR-tRK" firstAttribute="trailing" secondItem="tf1-dV-hvz" secondAttribute="trailing" constant="-12" id="Xqt-Ic-MdP"/>
+                    <constraint firstItem="NTT-G6-jFv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Zlj-SU-wld"/>
+                    <constraint firstAttribute="bottom" secondItem="VCo-Tf-FG6" secondAttribute="bottom" constant="8" id="iFN-Hi-YIW"/>
+                    <constraint firstItem="VCo-Tf-FG6" firstAttribute="leading" secondItem="331-jR-tRK" secondAttribute="leading" id="jJt-WT-16p"/>
+                    <constraint firstItem="tf1-dV-hvz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="mvw-4T-duQ"/>
+                    <constraint firstItem="VCo-Tf-FG6" firstAttribute="top" secondItem="331-jR-tRK" secondAttribute="bottom" constant="8" id="wxh-74-cMV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="authorCommentLabel" destination="331-jR-tRK" id="Wim-gj-GoF"/>
+                <outlet property="authorNameLabel" destination="O2v-aN-fMq" id="WkF-5M-kD6"/>
+                <outlet property="avatarAuthorImageView" destination="NTT-G6-jFv" id="9Ps-Uh-kiK"/>
+                <outlet property="likeButton" destination="Lna-s5-pRw" id="4UY-6S-xPP"/>
+                <outlet property="likeCountLabel" destination="ilf-zL-4kj" id="dt8-Oc-cyY"/>
+                <outlet property="readMoreButton" destination="AZc-zE-1rz" id="qOz-G3-vBE"/>
+                <outlet property="replyAreaView" destination="wIH-sL-B9H" id="0QX-RJ-nPH"/>
+                <outlet property="totalReplyLabel" destination="m9Q-Yh-nOr" id="SjS-0E-Phv"/>
+            </connections>
+            <point key="canvasLocation" x="-128.24427480916029" y="39.7887323943662"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ellipsis.message" catalog="system" width="128" height="116"/>
+        <image name="hand.thumbsdown" catalog="system" width="123" height="128"/>
+        <image name="hand.thumbsup" catalog="system" width="123" height="128"/>
+        <image name="imageProfile" width="37" height="37"/>
+        <image name="more_vert-more_vert_symbol" width="3" height="11"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
